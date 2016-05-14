@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+
+    <title>メークラ &mdash; 電子メールテキスト強制改行挿入ツール</title>
+
+    <link rel="stylesheet" href="skyblue/css/skyblue.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>メークラ</h1>
+        <form><p>
+            電子メールテキスト強制改行挿入ツールです。
+            <input id="l" value="70" type="number" min="1" max="200" required> 文字ごとに強制改行します。
+        </p></form>
+
+        <div>
+            <textarea id="src" class="form-control"></textarea>
+        </div>
+
+        <div id="dst"></div>
+    </div>
+
+</body>
+</html>

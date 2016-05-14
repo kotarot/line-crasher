@@ -1,0 +1,11 @@
+/**
+ * main.css
+ */
+
+textarea#src {
+    width: 100%;
+    font-family: 'ＭＳ ゴシック', 'MS Gothic', 'Osaka－等幅', Osaka-mono, monospace;
+}
+div#dst {
+    font-family: 'ＭＳ ゴシック', 'MS Gothic', 'Osaka－等幅', Osaka-mono, monospace;
+}
