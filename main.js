@@ -44,7 +44,7 @@ var substrAfter = function(line, L) {
     for (var i = 1, _l = line.length; i < _l; i++) {
         var str = line.substr(0, i);
         var len = countChar(str);
-        if (L < len) {
+        if (L <= len) {
             return line.substr(i);
         }
     }
