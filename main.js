@@ -45,7 +45,13 @@ var substrAfter = function(line, L) {
         var str = line.substr(0, i);
         var len = countChar(str);
         if (L <= len) {
-            return line.substr(i);
+            // 制限文字数を超える境目の文字が2バイトだったら
+            // その文字も含めた文字列を返す必要がある。
+            if (len % 2 == 1 && 2 <= countChar(line.charAt(i - 1))) {
+                return line.substr(i - 1);
+            } else {
+                return line.substr(i);
+            }
         }
     }
     return '';
